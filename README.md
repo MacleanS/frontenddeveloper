@@ -1,55 +1,60 @@
-Front End Developer Coding Exercise
-===================================
+# Front-end Developer Coding Exercise
 
-What you should build
----------------------
+
+## What you should build
 
 Qriously is a question company, so we would like you to build a small question unit.
 
 The unit should provide the following functionality:
 
-- it should render a question of your choice and 3 answer options
-- it should be 320 x 50 pixels
-- it should contain the meerkat from our logo
-- the options should be clickable / tappable
-- tapping an option should trigger an ajax call submitting the vote as a GET parameter and load the response.json
-- the unit should display the results data provided in the JSON response
+- It should render a question and three answer options (from the config.js file)
+- It should be 320 x 50 pixels
+- The answer options should be clickable & tappable
+- Tapping an option should trigger an AJAX call submitting the vote as a GET parameter (URL can be found in config.js)
+  which will return a results file.
+- The unit should display the results data provided in the JSON response
+- It only needs to run on modern iOS/Android & Chrome desktop browsers - don't worry about any other browsers
 
 
-Deliverable
------------
+## Deliverable
 
-Fork this repo and commit your code to the fork.You should produce an html file index.html + all the resources that your unit needs.
-Opening the index.html file in a browser should show the working unit. We will test this on iOS / Android / Chrome Desktop (webkit only).
+Fork this repository & commit your changes to your local branch (don't publish them on GitHub, please.)
 
+Add a build step to `gulpfile.babel.js`, or add a different build step, if you prefer.
 
-Required Techniques
--------------------
+**Replace the README.md** file with instructions on how to set things up & run the code. Please also include the NPM &
+Node version numbers, to make sure we're using the same.\
+Make sure all dependencies are listed in package.json.
 
-- use touch events
-- make the question & options configurable via a config object
-- don't pollute the global namespace (except for the config)
-- make it responsive, between 320 and 480 pixels width
+When you're done and all changes are committed, run `git clean -df` to delete unversioned folders (like `node_modules`,
+etc.) and package the whole project into a ZIP file and send it to us.
 
-Nice to haves
--------------
-
-- size matters, make it as small as possible with as few http requests as possible
-- no jQuery but any other library you see fit (size is key for us)
-- structure your code, use Common Js module syntax
-- use Bower or NPM
-- use Grunt, Gulp or Webpack
-- use LESS / SCSS
-- don't use image files
-- use a templating library, no hardcoded DOM in the index.html
-- make it look nice
-- add animations
-- use es6 features
-
-Resources
----------
-Our logo [SVG](http://www.qriously.com/wp-content/uploads/2013/05/qriouslyLogoLightBackground.svg)
+We will test it on iOS (Safari), Android (Chrome) and desktop (Chrome).
 
 
-Happy Coding  
-============
+## Requirements
+
+- Use ES6/ES2015
+- Build using Webpack & Babel (using Gulp or Grunt if you like)
+- Use SCSS or LESS for CSS code
+- Use touch events
+- Tap targets should be as big as possible, a tap nearly anywhere on the ad should result in an interaction, even if
+  it's not on the button
+- Use configuration object in config.js
+- Make it responsive, between 320 and 480 pixels width
+
+
+## Bonus
+
+- Make the resulting JavaScript & CSS as small as possible:
+  - Use as few dependencies as possible
+  - Use lightweight dependencies where possible
+  - Minify/obfuscate code
+  - Don't use image files
+- As little hardcoded HTML as possible (generate through JS, where possible)
+- Make it look nice
+- Add animations & transitions
+- Annotate types using [Flow](https://flow.org/)
+
+
+# Happy Coding!
