@@ -9,7 +9,7 @@ The unit should provide the following functionality:
 
 - It should render a question and three answer options (from the config.js file)
 - It should be 320 x 50 pixels
-- The answer options should be clickable & tappable
+- The answer options should be clickable & tappable (mouse & touch interfaces)
 - Tapping an option should trigger an AJAX call submitting the vote as a GET parameter (URL can be found in config.js)
   which will return a results file.
 - The unit should display the results data provided in the JSON response
@@ -20,7 +20,9 @@ The unit should provide the following functionality:
 
 Fork this repository & commit your changes to your local branch (don't publish them on GitHub, please.)
 
-Add a build step to `gulpfile.babel.js`, or add a different build step, if you prefer.
+Add a build step to `gulpfile.babel.js`, or build on yourself. (npm commands are fine, for example). That build step
+should take the code from `src/main/`, package it if that's necessary, and then move it into the temporary `target/`
+folder.
 
 **Replace the README.md** file with instructions on how to set things up & run the code. Please also include the NPM &
 Node version numbers, to make sure we're using the same.\

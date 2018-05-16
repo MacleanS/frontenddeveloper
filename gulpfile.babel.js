@@ -6,7 +6,7 @@ import app from "./src/server/app.js";
 
 
 gulp.task('build', function (cb) {
-    // TODO add a build step here that builds the code & moves it to the target/ folder
+    // TODO either add a build step here that builds the code & moves it to the target/ folder, or add a different build process & document in README.md
 });
 
 gulp.task('watch', function () {

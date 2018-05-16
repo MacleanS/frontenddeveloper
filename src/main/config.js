@@ -14,5 +14,5 @@ export default {
             "id": 3
         }
     ],
-    "postUrl": "http://localhost:3456/vote"
+    "postUrl": "http://localhost:3456/answer"
 };
