@@ -29,7 +29,9 @@ Node version numbers, to make sure we're using the same.\
 Make sure all dependencies are listed in package.json.
 
 When you're done and all changes are committed, run `git clean -df` to delete unversioned folders (like `node_modules`,
-etc.) and package the whole project into a ZIP file and send it to us.
+etc.)
+
+Package whole project into a ZIP file - remember to include any necessary hidden files and folders - e.g. `.git`.
 
 We will test it on iOS (Safari), Android (Chrome) and desktop (Chrome).
 
