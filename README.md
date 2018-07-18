@@ -8,7 +8,6 @@ Qriously is a question company, so we would like you to build a small question u
 The unit should provide the following functionality:
 
 - It should render a question and three answer options (from the config.js file)
-- It should be 320 x 50 pixels
 - The answer options should be clickable & tappable (mouse & touch interfaces)
 - Tapping an option should trigger an AJAX call submitting the vote as a GET parameter (URL can be found in config.js)
   which will return a results file.
@@ -45,7 +44,7 @@ We will test it on iOS (Safari), Android (Chrome) and desktop (Chrome).
 - Tap targets should be as big as possible, a tap nearly anywhere on the ad should result in an interaction, even if
   it's not on the button
 - Use configuration object in config.js
-- Make it responsive, between 320 and 480 pixels width
+- It should be 320 x 50 pixels in size (but responsive, between 320 and 480 pixels width)
 
 
 ## Bonus
